@@ -2,7 +2,7 @@
 <html lang="hr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prodaja svega</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -30,14 +30,32 @@
       <option value="elektronika">Elektronika</option>
       <option value="odjeca">Odjeća</option>
     </select>
+    <input type="text" id="cijena" placeholder="Cijena (€)" />
+    <input type="text" id="slika" placeholder="URL slike (npr. https://...)" />
     <button onclick="dodajOglas()">Spremi oglas</button>
   </section>
 
   <main id="oglasi">
-    <div class="oglas auta">BMW 320d 2014</div>
-    <div class="oglas bicikla">Mountain Bike XTR</div>
-    <div class="oglas elektronika">iPhone 13 Pro</div>
-    <div class="oglas odjeca">Jakna Zara - M</div>
+    <div class="oglas auta">
+      <img src="https://via.placeholder.com/180x100?text=BMW+320d" alt="BMW 320d" />
+      <h3>BMW 320d 2014</h3>
+      <p class="cijena">€12,500</p>
+    </div>
+    <div class="oglas bicikla">
+      <img src="https://via.placeholder.com/180x100?text=Mountain+Bike+XTR" alt="Mountain Bike XTR" />
+      <h3>Mountain Bike XTR</h3>
+      <p class="cijena">€450</p>
+    </div>
+    <div class="oglas elektronika">
+      <img src="https://via.placeholder.com/180x100?text=iPhone+13+Pro" alt="iPhone 13 Pro" />
+      <h3>iPhone 13 Pro</h3>
+      <p class="cijena">€950</p>
+    </div>
+    <div class="oglas odjeca">
+      <img src="https://via.placeholder.com/180x100?text=Jakna+Zara" alt="Jakna Zara" />
+      <h3>Jakna Zara - M</h3>
+      <p class="cijena">€60</p>
+    </div>
   </main>
 
   <script src="script.js"></script>
