@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prodaja Stvari</title>
+  <title>Prodaja svega</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Online Prodaja</h1>
-    <button onclick="dodajOglas()">+ Dodaj Oglas</button>
+    <h1>Prodaja svega</h1>
+    <button onclick="prikaziFormu()">+ Dodaj oglas</button>
   </header>
 
   <nav>
@@ -22,6 +22,17 @@
     </ul>
   </nav>
 
+  <section id="formaOglasa" style="display:none; padding: 20px;">
+    <input type="text" id="naziv" placeholder="Naziv oglasa" />
+    <select id="kategorija">
+      <option value="auta">Auta</option>
+      <option value="bicikla">Bicikla</option>
+      <option value="elektronika">Elektronika</option>
+      <option value="odjeca">Odjeća</option>
+    </select>
+    <button onclick="dodajOglas()">Spremi oglas</button>
+  </section>
+
   <main id="oglasi">
     <div class="oglas auta">BMW 320d 2014</div>
     <div class="oglas bicikla">Mountain Bike XTR</div>
@@ -31,4 +42,4 @@
 
   <script src="script.js"></script>
 </body>
-                                              </html>
+</html>
